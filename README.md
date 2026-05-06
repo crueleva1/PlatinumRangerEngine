@@ -24,7 +24,6 @@
 | [GLSLMaterialSystem](GLSLMaterialSystem) | GLSL 材質與著色器管線。 |
 | [ImguiFramework](ImguiFramework) | ImGui 繪製與整合。 |
 | [VulkanRenderer](VulkanRenderer) | Vulkan 渲染後端仍在開發中，會不定期更新。Solution 內為靜態庫；現況可作為後續實驗模組。**本 README 所述可執行示範仍以 OpenGL Demo 為主。** |
-| [AppProject](AppProject) | 其他範例／測試用程式（視建置組態為準）。 |
 
 ## 啟動流程（概念）
 

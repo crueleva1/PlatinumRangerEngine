@@ -24,7 +24,6 @@ A Windows sample built around **ECS (EntityX)**. The demo uses **Win32** plus **
 | [GLSLMaterialSystem](GLSLMaterialSystem) | GLSL materials and shader wiring. |
 | [ImguiFramework](ImguiFramework) | ImGui rendering and hooks. |
 | [VulkanRenderer](VulkanRenderer) | Vulkan renderer is **still under development** and receives **sporadic updates**. Included as a static library / experimental backend. **The runnable demo documented in this README uses the OpenGL path.** |
-| [AppProject](AppProject) | Extra samples / tooling (depends on your build configuration). |
 
 ## Startup (concept)
 
