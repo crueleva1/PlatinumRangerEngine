@@ -83,7 +83,7 @@ flowchart LR
 | `]` | Toggle normals drawn via geometry shader |
 
 ## Demo
-![Demo screenshot](docs/screenshots/demo.png)
+![Demo screenshot](docs/screenshots/Demo.png)
 
 ---
 

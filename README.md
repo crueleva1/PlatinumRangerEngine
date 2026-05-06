@@ -84,7 +84,7 @@ flowchart LR
 
 ## Demo
 
-![Demo 畫面](docs/screenshots/demo.png)
+![Demo 畫面](docs/screenshots/Demo.png)
 
 ---
 
