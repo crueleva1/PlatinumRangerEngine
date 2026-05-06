@@ -1,0 +1,187 @@
+<SpawnSystem version="0.1">
+    
+    <config RegisterMaterialComp="PBR"/>
+    
+    <!-- 
+    <Text Font="monaco-20"
+          String="tyu"
+          ScreenPos="50.0,300.0"/>
+    -->
+    <Assimp FileName="sponzaPBR.obj"
+            PathDir="data/crytek-sponza"
+            VertexShaderFile="data/BasicTexturedShader.vs"
+            VertexShaderName="BasicTexturedVertexShader"
+            FragmentShaderFile="data/BasicTexturedShader.fs"
+            FragmentShaderName="BasicTexturedPixelShader"
+            Visible="true"
+            Position="0.0,0.0,0.0"
+            Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0"
+            Scale="1.0,1.0,1.0"
+            IsStatic="true"
+            PBR="true"/>
+
+    <Assimp FileName="teapot.obj"
+            PathDir="data"
+            VertexShaderFile="data/BasicShader.vs"
+            VertexShaderName="BasicVertexShader"
+            FragmentShaderFile="data/BasicShader.fs"
+            FragmentShaderName="BasicFragmentShader"
+            Visible="true"
+            Position="0.0,0.0,0.0"
+            Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0"
+            Scale="1.0,1.0,1.0"
+            IsStatic="false"/>
+
+    <Assimp FileName="teapot.obj"
+            PathDir="data"
+            VertexShaderFile="data/BasicShader.vs"
+            VertexShaderName="BasicVertexShader"
+            FragmentShaderFile="data/BasicShader.fs"
+            FragmentShaderName="BasicFragmentShader"
+            Visible="true"
+            Position="0.0,0.0,50.0"
+            Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0"
+            Scale="1.0,1.0,1.0"
+            IsStatic="false"/>
+
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="1.0,1.0,1.0" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light1" Position="-300.0,300.0,0.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="false"/>
+        <Component Type="EnvMap" Radius="500" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH24" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+        <Component Type="Movement" Control="PosSequence" AutoStart="true" Sequence="300.0,50.0,100.0|
+                                                                                    300.0,200.0,-100.0|
+                                                                                    -300.0,350.0,-100.0|
+                                                                                    -300.0,450.0,100.0|
+                                                                                    300.0,500.0,100.0|
+                                                                                    300.0,450.0,-100.0|
+                                                                                    -300.0,350.0,-100.0|
+                                                                                    -300.0,200.0,100.0|
+                                                                                    -300.0,50.0,100.0"/>
+        
+    </Entity>
+
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="1.0,0.8,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light2" Position="1000.0,250.0,0.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="500" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH16" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+    </Entity>
+ 
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="0.4,1.0,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light3" Position="-1000.0,30.0,0.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="500" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH16" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+    </Entity>
+
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="900" Body="3" Dimmer="1.0" Diffuse="0.85,0.9,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="900.0,10,10" />
+        <Component Type="Scene" Name="Light4" Position="0.0,500.0,0.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="900" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH16" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+    </Entity>
+    <!-- 
+    <Entity>
+        <Component Type="Scene" Name="Light2" Position="1000.0,250.0,0.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="500" Resolution="512" Texture0="RGBA8_SNORM" DepthTexture="DEPTH16" Active="true" CheckByDynamic="false"/>
+    </Entity>
+
+    <Entity>
+        <Component Type="Scene" Name="Light3" Position="-1000.0,30.0,0.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="500" Resolution="512" Texture0="RGBA8_SNORM" DepthTexture="DEPTH16" Active="true" CheckByDynamic="false"/>
+    </Entity>
+
+    <Entity>
+        <Component Type="Scene" Name="Light4" Position="0.0,500.0,0.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="900" Resolution="512" Texture0="RGBA8_SNORM" DepthTexture="DEPTH16" Active="true" CheckByDynamic="false"/>
+    </Entity>
+    -->
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="0.8,0.5,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light5" Position="400.0,100.0,100.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="500" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH16" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+    </Entity>
+
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="1.0,0.8,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light6" Position="500,100.0,500.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" IsStatic ="true"/>
+        <Component Type="EnvMap" Radius="500" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH16" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+    </Entity>
+
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="0.4,1.0,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light7" Position="-500,100.0,-500.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" />
+        <Component Type="EnvMap" Radius="1000" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH24" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+        <Component Type="Movement" Control="PosSequence" AutoStart="true" Sequence="-500.0,100.0,-500.0|
+                                                                                    -500.0,200.0,-450.0|
+                                                                                    -500.0,350.0,-450.0|
+                                                                                    -500.0,450.0,0.0|
+                                                                                    -500.0,500.0,450.0|
+                                                                                    -500.0,450.0,450.0|
+                                                                                    -500.0,350.0,-500.0|
+                                                                                    -500.0,200.0,-500.0|
+                                                                                    -500.0,100.0,100.0"/>
+    </Entity>
+
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="0.5,0.4,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light8" Position="-500.0,30.0,500.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" />
+        <Component Type="EnvMap" Radius="1000" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH24" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+        <Component Type="Movement" Control="PosSequence" AutoStart="true" Sequence="-500.0,50.0,100.0|
+                                                                                    -500.0,200.0,-100.0|
+                                                                                    -500.0,350.0,-100.0|
+                                                                                    -500.0,450.0,100.0|
+                                                                                    -500.0,500.0,100.0|
+                                                                                    -500.0,450.0,-100.0|
+                                                                                    -500.0,350.0,-100.0|
+                                                                                    -500.0,200.0,100.0|
+                                                                                    -500.0,50.0,100.0"/>
+    </Entity>
+
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="0.8,0.5,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="Light99" Position="500.0,100.0,-500.0" Rotate="1.0,0.0,0.0|0.0,1.0,0.0|0.0,0.0,1.0" Scale="1.0,1.0,1.0" />
+        <Component Type="EnvMap" Radius="1000" Resolution="512" Texture0="R32_SFLOAT" DepthTexture="DEPTH24" Active="true"/>
+        <Component Type="Renderable" Visible="true"/>
+        <Component Type="Movement" Control="PosSequence" AutoStart="true" Sequence="300.0,50.0,-500.0|
+                                                                                    300.0,200.0,-500.0|
+                                                                                    -300.0,350.0,-500.0|
+                                                                                    -300.0,450.0,-500.0|
+                                                                                    300.0,500.0,-500.0|
+                                                                                    300.0,450.0,-500.0|
+                                                                                    -300.0,350.0,-500.0|
+                                                                                    -300.0,200.0,-500.0|
+                                                                                    -300.0,50.0,-500.0"/>
+    </Entity>
+    <!-- 
+    <Entity>
+        <Component Type="Light" LightType="Point" Radius="500" Body="3" Dimmer="1.0" Diffuse="1.0,0.8,0.2" Ambient="0.1,0.1,0.1" Specular="0.8,0.8,0.8" />
+        <Component Type="Geometry" GeomType="Sphere" Sphere="500.0,10,10" />
+        <Component Type="Scene" Name="CameraLight" Position="0.0,20.5,-200.0" />
+        <Component Type="Renderable" Visible="true"/>
+        <Component Type="Control" Input="KeyboardMouse"/>
+        <Component Type="Movement" Control="KeyBorad"/>
+    </Entity>
+    -->
+    <Entity>
+        <Component Type="Scene" Name="Camera" Position="0.0,20.5,-200.0" />
+        <Component Type="Camera" Perspective="0.2,10000" LookAt="0.0,20.5,0.0" Active="true"/>
+        <Component Type="Control" Input="KeyboardMouse"/>
+        <Component Type="Movement" Control="KeyBorad"/>
+    </Entity>
+
+</SpawnSystem>

@@ -1,0 +1,284 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="System">
+      <UniqueIdentifier>{84927caa-1d31-472d-9db9-42a8cab56899}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component">
+      <UniqueIdentifier>{fffe760c-63f3-45e8-b646-5a72a8bd95a8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Interface">
+      <UniqueIdentifier>{2f4c1ea1-3ae8-4b89-9b3f-ce1428cd3585}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Interface">
+      <UniqueIdentifier>{5645a905-ad3a-4cf9-9ea9-046eccabdb4a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="System\Main">
+      <UniqueIdentifier>{a29a03f4-bcf4-4beb-9650-4e3be2dda537}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Component\Main">
+      <UniqueIdentifier>{7b39c886-172c-45ae-b00e-3287abd95c2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{bc97c3e2-c3ef-4fa8-a100-15c88ac7132e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="TSystemInterface.h">
+      <Filter>System</Filter>
+    </ClInclude>
+    <ClInclude Include="TComponentInterface.h">
+      <Filter>Component</Filter>
+    </ClInclude>
+    <ClInclude Include="ResourceSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="MaterialSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="EventSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultResourceComponent.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultResourceSystem.h">
+      <Filter>System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="SpawnSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="InputSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="DataModifier.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultSpawnSystem.h">
+      <Filter>System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlParser.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="SceneSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Util.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultSceneComponent.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="Factory.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ECSFrameworkPCH.h" />
+    <ClInclude Include="MovementSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultMovementSystem.h">
+      <Filter>System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultLightComponent.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultTextComponent.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="TextSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultSceneSystem.h">
+      <Filter>System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="IBound.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ITexture.h">
+      <Filter>System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="IShader.h">
+      <Filter>System\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="RecyclePool.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderState.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ScopeHelper.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="PropertySet.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureDesc.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultMaterialComponent.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="DataWalker.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ICameraComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IGeometryComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IInputControlComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IEventComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ILightComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IMaterialComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IMovementComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IRenderComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="IResourceComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ISceneComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="GeomertryComponent.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderComponent.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="ShareModule.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="IApplication.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="ILanucherConfig.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderer.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="XmlWriter.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="IEditorComponent.h">
+      <Filter>Component\Interface</Filter>
+    </ClInclude>
+    <ClInclude Include="Delegate.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="Thread.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="POSIXThread.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomGeometryComp.h">
+      <Filter>Component\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="LoggerSystem.h">
+      <Filter>System\Interface</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DefaultResourceComponent.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultResourceSystem.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderSystem.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultSpawnSystem.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlParser.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultSceneComponent.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ECSFrameworkPCH.cpp" />
+    <ClCompile Include="DefaultMovementSystem.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultLightComponent.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultTextComponent.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultSceneSystem.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderState.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="PropertySet.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureDesc.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultMaterialComponent.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="GeomertryComponent.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderComponent.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="ShareModule.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderer.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlWriter.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="POSIXThread.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="Thread.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="EventSystem.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomGeometryComp.cpp">
+      <Filter>Component\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Util</Filter>
+    </ClCompile>
+    <ClCompile Include="LoggerSystem.cpp">
+      <Filter>System\Main</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,49 @@
+#pragma once
+
+#include "IInputControlComponent.h"
+#include "DataModifier.h"
+
+class ECS_MODELVIEW_API CWin32MouseInputComponent : public IInputControlComponent
+{
+    TDataModifier <float> m_nX;
+    TDataModifier <float> m_nY;
+    bool m_bDown;
+    bool m_bLeft;
+    bool m_bMoving;
+    entityx::EventManager& m_rkEventMgr;
+public:    
+    CWin32MouseInputComponent(entityx::EventManager& _rkEventMgr);
+
+    virtual ~CWin32MouseInputComponent();
+
+    virtual bool isHandled ();
+
+    virtual void receive(const IInputEvent& _rkEvent);
+
+    void setHandled();
+
+    inline float getX()
+    {
+        return m_nX;
+    }
+
+    inline float getY()
+    {
+        return m_nY;
+    }
+
+    inline bool isDown()
+    {
+        return m_bDown;
+    }
+
+    inline bool isLeft()
+    {
+        return m_bLeft;
+    }
+
+    inline bool isMoving()
+    {
+        return m_bMoving;
+    }
+};

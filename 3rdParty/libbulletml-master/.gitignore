@@ -1,0 +1,16 @@
+# Generated
+.premake
+*.xcworkspace
+*.xcodeproj
+*.vcxproj*
+Makefile
+*.make
+
+# Binaries
+bin
+obj
+
+# Others
+*.sdf
+*.suo
+*.opensdf

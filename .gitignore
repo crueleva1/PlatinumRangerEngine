@@ -1,28 +1,74 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
+# Visual Studio 用戶設置和緩存
+.vs/
+*.VC.db
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 項目用戶文件
+*.vcxproj.user
+*.vcxproj.filters.user
+
+# IntelliSense 預編譯頭文件
+ipch/
+*.ipch
+
+# 編譯輸出目錄
+x64/
+x86/
+Debug/
+Release/
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+[Rr]eleases/
+build/
+[Bb]uild/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# Visual Studio 編譯產物
 *.obj
-
-# Precompiled Headers
-*.gch
+*.pdb
+*.ilk
+*.meta
+*.obj
 *.pch
+*.pdb
+*.pgc
+*.pgd
+*.rsp
+*.sbr
+*.tlb
+*.tli
+*.tlh
+*.tmp
+*.tmp_proj
+*.log
+*.vspscc
+*.vssscc
+.builds
+*.pidb
+*.svclog
+*.scc
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Visual Studio 跟蹤日誌
+*.tlog
+*.lastbuildstate
 
-# Fortran module files
-*.mod
+# Visual Studio 緩存文件
+*.cache
+*.VC.VC.opendb
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+# 運行時目錄
+Runtime/
 
-# Executables
-*.exe
-*.out
-*.app
+# Visual Studio 臨時文件
+*.opensdf
+*.sdf
+*.db-shm
+*.db-wal
+

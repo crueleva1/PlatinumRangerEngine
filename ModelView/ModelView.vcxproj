@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="DebugShared|Win32">
+      <Configuration>DebugShared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="DebugShared|x64">
+      <Configuration>DebugShared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseShared|Win32">
+      <Configuration>ReleaseShared</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="ReleaseShared|x64">
+      <Configuration>ReleaseShared</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|Win32">
+      <Configuration>Shipping</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Shipping|x64">
+      <Configuration>Shipping</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EEDECE9B-E4FB-4D2C-9B92-F11D57BF442D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>ModelView</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v145</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\3rdParty\SFML\x86\include;$(SolutionDir)\3rdParty\EntityX\;$(SolutionDir)\3rdParty\Assimp\include;$(SolutionDir)\3rdParty\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdParty\SFML\x86\lib;$(SolutionDir)\3rdParty\EntityX\Lib\Debug;$(SolutionDir)\3rdParty\Assimp\Lib\x86\Debug;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthread.lib;opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;entityx-d.lib;assimp-vc140-mt.lib;zlibstaticd.lib;sfml-main-d.lib;sfml-graphics-s-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\3rdParty\SFML\x86\include;$(SolutionDir)\3rdParty\EntityX\;$(SolutionDir)\3rdParty\Assimp\include;$(SolutionDir)\3rdParty\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdParty\SFML\x86\lib;$(SolutionDir)\3rdParty\EntityX\Lib\Debug;$(SolutionDir)\3rdParty\Assimp\Lib\x86\Debug;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthread.lib;opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;entityx-d.lib;assimp-vc140-mt.lib;zlibstaticd.lib;sfml-main-d.lib;sfml-graphics-s-d.lib;sfml-system-s-d.lib;sfml-window-s-d.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ECS_MODELVIEW_BUILD_SHARED;ECS_MODELVIEW_BUILD;_DEBUG;_WINDOWS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\EntityX;$(SolutionDir)3rdParty\Assimp\include;$(SolutionDir)3rdParty\GLM;$(SolutionDir)3rdParty\glew-2.0.0\include;$(SolutionDir)3rdParty\gli-0.7.0.0;$(SolutionDir)ECSFramework;$(SolutionDir)OpenGLRenderer;$(SolutionDir)3rdParty\rapidxml-1.13;$(SolutionDir)3rdParty\glslang;$(SolutionDir)3rdParty\freetype-2.7.1\include;$(SolutionDir)GLMFramework;$(SolutionDir)GLSLMaterialSystem;$(SolutionDir)3rdParty\kdTree-master;$(SolutionDir)ImguiFramework;$(SolutionDir)3rdParty\imgui;$(SolutionDir)3rdParty\NanoLogger\include</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;NanoLogger.lib;OpenGL32.lib;glew32s.lib;entityx-d.lib;assimp-vc140-mt.lib;zlibstaticd.lib;glslang.lib;freetyped.lib;imgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\glew-2.0.0\lib\Release\$(Platform);$(SolutionDir)3rdParty\Assimp\Lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\glslang\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\freetype-2.7.1\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\imgui\lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\NanoLogger\Lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='DebugShared|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>ECS_MODELVIEW_BUILD_SHARED;ECS_MODELVIEW_BUILD;IMGUI_SYSTEM_SHARED;ECS_OGL_BUILD_SHARED;ECS_GLSL_BUILD_SHARED;ECSGLM_BUILD_SHARED;ECS_BUILD_SHARED;ENTITYX_BUILD_SHARED;_DEBUG;_WINDOWS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;_HAS_ITERATOR_DEBUGGING=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\EntityX;$(SolutionDir)3rdParty\Assimp\include;$(SolutionDir)3rdParty\GLM;$(SolutionDir)3rdParty\glew-2.0.0\include;$(SolutionDir)3rdParty\gli-0.7.0.0;$(SolutionDir)ECSFramework;$(SolutionDir)OpenGLRenderer;$(SolutionDir)3rdParty\rapidxml-1.13;$(SolutionDir)3rdParty\glslang;$(SolutionDir)3rdParty\freetype-2.7.1\include;$(SolutionDir)GLMFramework;$(SolutionDir)GLSLMaterialSystem;$(SolutionDir)3rdParty\kdTree-master;$(SolutionDir)ImguiFramework;$(SolutionDir)3rdParty\imgui;$(SolutionDir)3rdParty\NanoLogger\include</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;NanoLogger.lib;OpenGL32.lib;glew32s.lib;entityx-d.lib;assimp-vc140-mt.lib;zlibstaticd.lib;glslang.lib;freetyped.lib;imgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\glew-2.0.0\lib\Release\$(Platform);$(SolutionDir)3rdParty\Assimp\Lib\$(Platform)\Debug;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\glslang\Lib\$(Platform)\Debug;$(SolutionDir)3rdParty\freetype-2.7.1\Lib\$(Platform)\Debug;$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Platform)\Debug;$(SolutionDir)3rdParty\imgui\lib\$(Platform)\Debug;$(SolutionDir)3rdParty\NanoLogger\Lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\$(Configuration)\entityx-d.dll" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\3rdParty\SFML\x86\include;$(SolutionDir)\3rdParty\EntityX\;$(SolutionDir)\3rdParty\Assimp\include;$(SolutionDir)\3rdParty\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdParty\SFML\x86\lib;$(SolutionDir)\3rdParty\EntityX\Lib\Release;$(SolutionDir)\3rdParty\Assimp\Lib\x86\Release;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthread.lib;opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;entityx.lib;assimp-vc140-mt.lib;zlibstatic.lib;sfml-main.lib;sfml-graphics-s.lib;sfml-system-s.lib;sfml-window-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\3rdParty\SFML\x86\include;$(SolutionDir)\3rdParty\EntityX\;$(SolutionDir)\3rdParty\Assimp\include;$(SolutionDir)\3rdParty\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdParty\SFML\x86\lib;$(SolutionDir)\3rdParty\EntityX\Lib\Release;$(SolutionDir)\3rdParty\Assimp\Lib\x86\Release;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthread.lib;opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;entityx.lib;assimp-vc140-mt.lib;zlibstatic.lib;sfml-main.lib;sfml-graphics-s.lib;sfml-system-s.lib;sfml-window-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Create</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\3rdParty\SFML\x86\include;$(SolutionDir)\3rdParty\EntityX\;$(SolutionDir)\3rdParty\Assimp\include;$(SolutionDir)\3rdParty\GLM;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\3rdParty\SFML\x86\lib;$(SolutionDir)\3rdParty\EntityX\Lib\Release;$(SolutionDir)\3rdParty\Assimp\Lib\x86\Release;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Configuration)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>pthread.lib;opengl32.lib;winmm.lib;freetype.lib;jpeg.lib;entityx.lib;assimp-vc140-mt.lib;zlibstatic.lib;sfml-main.lib;sfml-graphics-s.lib;sfml-system-s.lib;sfml-window-s.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ECS_MODELVIEW_BUILD_SHARED;ECS_MODELVIEW_BUILD;NDEBUG;_WINDOWS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\EntityX;$(SolutionDir)3rdParty\Assimp\include;$(SolutionDir)3rdParty\GLM;$(SolutionDir)3rdParty\glew-2.0.0\include;$(SolutionDir)3rdParty\gli-0.7.0.0;$(SolutionDir)ECSFramework;$(SolutionDir)OpenGLRenderer;$(SolutionDir)3rdParty\rapidxml-1.13;$(SolutionDir)3rdParty\glslang;$(SolutionDir)3rdParty\freetype-2.7.1\include;$(SolutionDir)GLMFramework;$(SolutionDir)GLSLMaterialSystem;$(SolutionDir)3rdParty\kdTree-master;$(SolutionDir)ImguiFramework;$(SolutionDir)3rdParty\imgui;$(SolutionDir)3rdParty\NanoLogger\include</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;NanoLogger.lib;opengl32.lib;glew32s.lib;entityx.lib;assimp-vc140-mt.lib;zlibstatic.lib;glslang.lib;freetype.lib;imgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\glew-2.0.0\lib\$(Configuration)\$(Platform);$(SolutionDir)3rdParty\Assimp\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\glslang\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\freetype-2.7.1\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\imgui\lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\NanoLogger\Lib\$(Platform)\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <LinkTimeCodeGeneration>UseFastLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ECS_MODELVIEW_BUILD_SHARED;ECS_MODELVIEW_BUILD;ECS_OGL_BUILD_SHARED;ECS_GLSL_BUILD_SHARED;ECSGLM_BUILD_SHARED;ECS_BUILD_SHARED;ENTITYX_BUILD_SHARED;NDEBUG;_WINDOWS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\EntityX;$(SolutionDir)3rdParty\Assimp\include;$(SolutionDir)3rdParty\GLM;$(SolutionDir)3rdParty\glew-2.0.0\include;$(SolutionDir)3rdParty\gli-0.7.0.0;$(SolutionDir)ECSFramework;$(SolutionDir)OpenGLRenderer;$(SolutionDir)3rdParty\rapidxml-1.13;$(SolutionDir)3rdParty\glslang;$(SolutionDir)3rdParty\freetype-2.7.1\include;$(SolutionDir)GLMFramework;$(SolutionDir)GLSLMaterialSystem;$(SolutionDir)3rdParty\kdTree-master;$(SolutionDir)ImguiFramework;$(SolutionDir)3rdParty\imgui;$(SolutionDir)3rdParty\NanoLogger\include</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;NanoLogger.lib;opengl32.lib;glew32s.lib;entityx.lib;assimp-vc140-mt.lib;zlibstatic.lib;glslang.lib;freetype.lib;imgui.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\glew-2.0.0\lib\Release\$(Platform);$(SolutionDir)3rdParty\Assimp\Lib\$(Platform)\Release;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\glslang\Lib\$(Platform)\Release;$(SolutionDir)3rdParty\freetype-2.7.1\Lib\$(Platform)\Release;$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Platform)\Release;$(SolutionDir)3rdParty\imgui\lib\$(Platform)\Release;$(SolutionDir)3rdParty\NanoLogger\Lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\$(Configuration)\entityx.dll" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>ECS_MODELVIEW_BUILD_SHARED;ECS_MODELVIEW_BUILD;ECS_OGL_BUILD_SHARED;ECS_GLSL_BUILD_SHARED;ECSGLM_BUILD_SHARED;ECS_BUILD_SHARED;ENTITYX_BUILD_SHARED;NDEBUG;_WINDOWS;GLEW_STATIC;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PrecompiledHeaderFile>MainPCH.h</PrecompiledHeaderFile>
+      <AdditionalIncludeDirectories>$(SolutionDir)3rdParty\EntityX;$(SolutionDir)3rdParty\Assimp\include;$(SolutionDir)3rdParty\GLM;$(SolutionDir)3rdParty\glew-2.0.0\include;$(SolutionDir)3rdParty\gli-0.7.0.0;$(SolutionDir)ECSFramework;$(SolutionDir)OpenGLRenderer;$(SolutionDir)3rdParty\rapidxml-1.13;$(SolutionDir)3rdParty\glslang;$(SolutionDir)3rdParty\freetype-2.7.1\include;$(SolutionDir)GLMFramework;$(SolutionDir)GLSLMaterialSystem;$(SolutionDir)3rdParty\kdTree-master;$(SolutionDir)ImguiFramework;$(SolutionDir)3rdParty\imgui;$(SolutionDir)3rdParty\NanoLogger\include</AdditionalIncludeDirectories>
+      <BufferSecurityCheck>true</BufferSecurityCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>pthread.lib;NanoLogger.lib;opengl32.lib;glew32s.lib;entityx.lib;assimp-vc140-mt.lib;zlibstatic.lib;glslang.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\Release;$(SolutionDir)3rdParty\glew-2.0.0\lib\Release\$(Platform);$(SolutionDir)3rdParty\Assimp\Lib\$(Platform)\Release;%(AdditionalLibraryDirectories);$(SolutionDir)3rdParty\glslang\Lib\$(Platform)\Release;$(SolutionDir)3rdParty\freetype-2.7.1\Lib\$(Platform)\Release;$(SolutionDir)3rdParty\pthreads_v3.0.0\lib\$(Platform)\$(Configuration);$(SolutionDir)3rdParty\NanoLogger\Lib\$(Platform)\$(Configuration)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>copy /Y "$(SolutionDir)3rdParty\EntityX\Lib\$(Platform)\$(Configuration)\entityx.dll" "$(SolutionDir)$(Platform)\$(Configuration)\"</Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="AssimpGLGeometryComp.cpp" />
+    <ClCompile Include="DeferredRenderPipeline.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="MainPCH.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='DebugShared|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='ReleaseShared|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Shipping|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="MeshData.cpp" />
+    <ClCompile Include="ModelViewImgui.cpp" />
+    <ClCompile Include="ModelViewTextComp.cpp" />
+    <ClCompile Include="ModelViewTextSystem.cpp" />
+    <ClCompile Include="ModelViewMovementComponent.cpp" />
+    <ClCompile Include="ModelViewMovementSystem.cpp" />
+    <ClCompile Include="ModelViewRenderSystem.cpp" />
+    <ClCompile Include="ModelViewSceneComponent.cpp" />
+    <ClCompile Include="ModelViewSceneSystem.cpp" />
+    <ClCompile Include="ModelViewSpawnSystem.cpp" />
+    <ClCompile Include="ForwardRenderPipeline.cpp" />
+    <ClCompile Include="ModelViewPipeline.cpp" />
+    <ClCompile Include="NanoLoggerSystem.cpp" />
+    <ClCompile Include="PBRMaterialComponent.cpp" />
+    <ClCompile Include="PhysicalBasedRenderPipeline.cpp" />
+    <ClCompile Include="TextGeometryComp.cpp" />
+    <ClCompile Include="Win32InputSystem.cpp" />
+    <ClCompile Include="Win32KeyboardInputComponent.cpp" />
+    <ClCompile Include="Win32KeyboardMouseInputComponent.cpp" />
+    <ClCompile Include="Win32MouseInputComponent.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AssimpGLGeometryComp.h" />
+    <ClInclude Include="DeferredRenderPipeline.h" />
+    <ClInclude Include="ForwardRenderPipeline.h" />
+    <ClInclude Include="MainPCH.h" />
+    <ClInclude Include="MeshData.h" />
+    <ClInclude Include="ModelViewImgui.h" />
+    <ClInclude Include="ModelViewTextComp.h" />
+    <ClInclude Include="ModelViewTextSystem.h" />
+    <ClInclude Include="ModelViewMovementComponent.h" />
+    <ClInclude Include="ModelViewMovementSystem.h" />
+    <ClInclude Include="ModelViewRenderSystem.h" />
+    <ClInclude Include="ModelViewSceneComponent.h" />
+    <ClInclude Include="ModelViewSceneSystem.h" />
+    <ClInclude Include="ModelViewSpawnSystem.h" />
+    <ClInclude Include="ModelViewPipeline.h" />
+    <ClInclude Include="NanoLoggerSystem.h" />
+    <ClInclude Include="PBRMaterialComponent.h" />
+    <ClInclude Include="PhysicalBasedRenderPipeline.h" />
+    <ClInclude Include="TextGeometryComp.h" />
+    <ClInclude Include="Win32InputSystem.h" />
+    <ClInclude Include="Win32KeyboardInputComponent.h" />
+    <ClInclude Include="Win32KeyboardMouseInputComponent.h" />
+    <ClInclude Include="Win32MouseInputComponent.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ECSFramework\ECSFramework.vcxproj">
+      <Project>{c1d5eb34-4ebe-47cc-ba11-1d341c3a907b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GLMFramework\GLMFramework.vcxproj">
+      <Project>{583c5d76-0389-44f9-88ae-dfc06aeefff1}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\GLSLMaterialSystem\GLSLMaterailSystem.vcxproj">
+      <Project>{b048c20d-6eaa-4909-b711-e05f4209cf6d}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\ImguiFramework\ImguiFramework.vcxproj">
+      <Project>{c2efbd2f-ec9a-4e64-bfcf-7a7fa32f09bd}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\OpenGLRenderer\OpenGLRenderer.vcxproj">
+      <Project>{9cb102b2-ffaa-4b05-8a0d-d7f3e6278ee6}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="data\init.xml">
+      <SubType>Designer</SubType>
+    </Xml>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="data\BasicShader.vs" />
+    <None Include="data\BasicShader.fs" />
+    <None Include="data\BasicTexturedShader.fs" />
+    <None Include="data\BasicTexturedShader.vs" />
+    <None Include="data\BasicVertexColorShader.fs" />
+    <None Include="data\BasicVertexColorShader.vs" />
+    <None Include="data\BloomShader.fs" />
+    <None Include="data\ContrastShader.fs" />
+    <None Include="data\DeferredRenderingShader.fs" />
+    <None Include="data\DeferredRenderingShader.vs" />
+    <None Include="data\GbufferShader.fs" />
+    <None Include="data\GbufferShader.vs" />
+    <None Include="data\LightBody.fs" />
+    <None Include="data\NormalDebugShader.fs" />
+    <None Include="data\NormalDebugShader.gs" />
+    <None Include="data\NormalDebugShader.vs" />
+    <None Include="data\PBRGBufferShader.fs" />
+    <None Include="data\PBRGBufferShader.vs" />
+    <None Include="data\PhysicalBaseRenderingShader.fs" />
+    <None Include="data\PhysicalBaseRenderingShader.vs" />
+    <None Include="data\ScreenSpaceShader.fs" />
+    <None Include="data\ScreenSpaceShader.vs" />
+    <None Include="data\TextShader.fs" />
+    <None Include="data\TextShader.vs" />
+    <None Include="data\WriteLinearDepth.fs" />
+    <None Include="data\WriteLinearDepth.vs" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

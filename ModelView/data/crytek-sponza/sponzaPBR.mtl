@@ -1,0 +1,413 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 20.08.2010 18:13:43
+
+newmtl leaf
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Thorn_diffuse.DDS
+	map_d textures\sponza_thorn_mask.DDS
+	map_Kn textures_pbr\Sponza_Thorn_normal.DDS
+	bump textures_pbr\Sponza_Thorn_normal.DDS
+	map_Ns textures_pbr\Sponza_Thorn_roughness.DDS
+
+newmtl vase_round
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\VaseRound_diffuse.DDS
+	map_Kn textures_pbr\VaseRound_normal.DDS
+	bump textures_pbr\VaseRound_normal.DDS
+	map_Ns textures_pbr\VaseRound_roughness.DDS
+
+newmtl Material__57
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\VasePlant_diffuse.DDS
+	map_Kn textures_pbr\VasePlant_normal.DDS
+	bump textures_pbr\VasePlant_normal.DDS
+	map_Ns textures_pbr\VasePlant_roughness.DDS
+	map_d textures\vase_plant_mask.DDS
+
+newmtl Material__298
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Background_Albedo.DDS
+	map_Kn textures_pbr\Background_Normal.DDS
+	bump textures_pbr\Background_Normal.DDS
+	map_NS textures_pbr\Background_roughness.DDS
+
+newmtl bricks
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Bricks_a_Albedo.DDS
+	map_Kn textures_pbr\Sponza_Bricks_a_Normal.DDS
+	map_Ns textures_pbr\Sponza_Bricks_a_Roughness.DDS
+	bump textures_pbr\Sponza_Bricks_a_Normal.DDS
+
+newmtl arch
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Arch_diffuse.DDS
+	map_Ns textures_pbr\Sponza_Arch_roughness.DDS
+	map_Kn textures_pbr\Sponza_Arch_normal.DDS
+	bump textures_pbr\Sponza_Arch_normal.DDS
+
+newmtl ceiling
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Ceiling_diffuse.DDS
+	map_Ns textures_pbr\Sponza_Ceiling_roughness.DDS
+	map_Kn textures_pbr\Sponza_Ceiling_normal.DDS
+	bump textures_pbr\Sponza_Ceiling_normal.DDS
+
+newmtl column_a
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Column_a_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Column_a_normal.DDS
+	bump textures_pbr\Sponza_Column_a_normal.DDS
+	map_Ns textures_pbr\Sponza_Column_a_roughness.DDS
+
+newmtl floor
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Floor_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Floor_normal.DDS
+	bump textures_pbr\Sponza_Floor_normal.DDS
+	map_Ns textures_pbr\Sponza_Floor_roughness.DDS
+
+newmtl column_c
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Column_c_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Column_c_normal.DDS
+	bump textures_pbr\Sponza_Column_c_normal.DDS
+	map_Ns textures_pbr\Sponza_Column_c_roughness.DDS
+
+newmtl details
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Details_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Details_normal.DDS
+	bump textures_pbr\Sponza_Details_normal.DDS
+	map_Ns textures_pbr\Sponza_Details_roughness.DDS
+
+newmtl column_b
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Column_b_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Column_b_normal.DDS
+	bump textures_pbr\Sponza_Column_b_normal.DDS
+	map_Ns textures_pbr\Sponza_Column_b_roughness.DDS
+
+newmtl flagpole
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Metallic_metallic.DDS
+	map_Kd textures_pbr\Sponza_FlagPole_diffuse.DDS
+	map_Kn textures_pbr\Sponza_FlagPole_normal.DDS
+	bump textures_pbr\Sponza_FlagPole_normal.DDS
+	map_Ns textures_pbr\Sponza_FlagPole_roughness.DDS
+
+newmtl fabric_e
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Sponza_Fabric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Fabric_Green_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Fabric_Green_normal.DDS
+	bump textures_pbr\Sponza_Fabric_Green_normal.DDS
+	map_Ns textures_pbr\Sponza_Fabric_roughness.DDS
+
+newmtl fabric_d
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Sponza_Fabric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Fabric_Blue_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Fabric_Blue_normal.DDS
+	bump textures_pbr\Sponza_Fabric_Blue_normal.DDS
+	map_Ns textures_pbr\Sponza_Fabric_roughness.DDS
+
+newmtl fabric_a
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Sponza_Fabric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Fabric_Red_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Fabric_Red_normal.DDS
+	bump textures_pbr\Sponza_Fabric_Red_normal.DDS
+	map_Ns textures_pbr\Sponza_Fabric_roughness.DDS
+
+newmtl fabric_g
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Sponza_Curtain_metallic.DDS
+	map_Kd textures_pbr\Sponza_Curtain_Blue_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Curtain_Blue_normal.DDS
+	bump textures_pbr\Sponza_Curtain_Blue_normal.DDS
+	map_Ns textures_pbr\Sponza_Curtain_roughness.DDS
+
+newmtl fabric_c
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Sponza_Curtain_metallic.DDS
+	map_Kd textures_pbr\Sponza_Curtain_Red_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Curtain_Red_normal.DDS
+	bump textures_pbr\Sponza_Curtain_Red_normal.DDS
+	map_Ns textures_pbr\Sponza_Curtain_roughness.DDS
+
+newmtl fabric_f
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Sponza_Curtain_metallic.DDS
+	map_Kd textures_pbr\Sponza_Curtain_Green_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Curtain_Green_normal.DDS
+	bump textures_pbr\Sponza_Curtain_Green_normal.DDS
+	map_Ns textures_pbr\Sponza_Curtain_roughness.DDS
+
+newmtl chain
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\ChainTexture_Metallic.DDS
+	map_Kd textures_pbr\ChainTexture_Albedo.DDS
+	map_d textures\chain_texture_mask.DDS
+	map_Kn textures_pbr\ChainTexture_Normal.DDS
+	bump textures_pbr\ChainTexture_Normal.DDS
+	map_Ns textures_pbr\ChainTexture_Roughness.DDS
+
+newmtl vase_hanging
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Metallic_metallic.DDS
+	map_Kd textures_pbr\VaseHanging_diffuse.DDS
+	map_Kn textures_pbr\VaseHanging_normal.DDS
+	bump textures_pbr\VaseHanging_normal.DDS
+	map_Ns textures_pbr\VaseHanging_roughness.DDS
+
+newmtl vase
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Vase_diffuse.DDS
+	map_Kn textures_pbr\Vase_normal.DDS
+	bump textures_pbr\Vase_normal.DDS
+	map_Ns textures_pbr\Vase_roughness.DDS
+
+newmtl Material__25
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Lion_Albedo.DDS
+	map_Kn textures_pbr\Lion_Normal.DDS
+	bump textures_pbr\Lion_Normal.DDS
+	map_Ns textures_pbr\Lion_Roughness.DDS
+
+newmtl roof
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+	map_Ka textures_pbr\Dielectric_metallic.DDS
+	map_Kd textures_pbr\Sponza_Roof_diffuse.DDS
+	map_Kn textures_pbr\Sponza_Roof_normal.DDS
+	bump textures_pbr\Sponza_Roof_normal.DDS
+	map_Ns textures_pbr\Sponza_Roof_roughness.DDS
